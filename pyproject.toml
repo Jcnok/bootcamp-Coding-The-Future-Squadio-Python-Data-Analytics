@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "bootcamp-coding-the-future-squadio-python-data-analytics"
+version = "0.1.0"
+description = "\"Repositório para compartilhar projetos e desafios do bootcamp Coding The Future Squadio - Python Data Analytics.\""
+authors = ["Julio Okuda <julio.okuda@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+jupyter = "^1.0.0"
+lab = "^8.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

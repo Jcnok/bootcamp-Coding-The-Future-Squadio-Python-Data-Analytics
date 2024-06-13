@@ -1,4 +1,4 @@
-# Desafio: Criando um Relatório de Vendas Elegante com Power BI
+# Desafio: Criando Um Relatório Gerencial de Vendas com Power BI
 
 ![img](./img/photo.jpg)
 
@@ -59,6 +59,12 @@ Aqui estão as colunas do conjunto de dados e suas respectivas descrições:
 
 16. **Year (Ano)**
     - Descrição: Ano em que a venda foi realizada.
+
+
+    ## Passo a Passo para realizar a conexão com o banco de dados.
+
+    * acesse o link https://data.world/jcnok/financial-sample/workspace/file?filename=Financial+Sample.xlsx
+    * 
     
 
 ### Sua gerente deseja ver um relatório sobre seus últimos números de vendas. Ela solicitou um resumo executivo para responder as seguintes perguntas:
@@ -171,7 +177,7 @@ device_auth = DeviceCodeLoginAuthentication()
     You are now logged in .
     
     The result should be passed only to trusted code in your notebook.
-    
+
 
 Siga as instruções para copiar o código gerado e cole-o após acessar o link fornecido. Isso autentica sua conta do Power BI.
 

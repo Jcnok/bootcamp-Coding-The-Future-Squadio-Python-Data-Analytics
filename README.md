@@ -12,10 +12,6 @@ Repositório com todos os projetos e desafios!
 
 * **Desafio de Projeto**: [Contribuindo em um Projeto Open Source no GitHub](https://github.com/Jcnok/bootcamp-Coding-The-Future-Squadio-Python-Data-Analytics/blob/main/DP1/README.md#desafio-contribuindo-em-um-projeto-open-source-no-github);
 * **Desafios de Código**: [Todos os desafios](https://github.com/Jcnok/bootcamp-Coding-The-Future-Squadio-Python-Data-Analytics/tree/main/DCs#resolu%C3%A7%C3%A3o-dos-desafios-de-c%C3%B3digo-python);
-* **Desafio de Código** : []();
-* **Desafio de Código** : []();
-* **Desafio de Código** : []();
-* **Desafio de Código** : []();
-* **Desafio de Projeto**: []();
-* **Desafio de Projeto**: []();
+* **Desafio de Projeto** : [Criando Um Relatório Gerencial de Vendas com Power BI]();
+* **Desafio de Projeto** : [Criando um Dashboard corporativo com integração com MySQL](desenvolvimento);
 

@@ -1,6 +1,6 @@
 # Desafio: Criando Um Relatório Gerencial de Vendas com Power BI
 
-![img](./img/photo.jpg)
+![img](../img/photo.jpg)
 
 ## Documentação do Conjunto de Dados "financial sample.xlsx"
 
@@ -59,12 +59,6 @@ Aqui estão as colunas do conjunto de dados e suas respectivas descrições:
 
 16. **Year (Ano)**
     - Descrição: Ano em que a venda foi realizada.
-
-
-    ## Passo a Passo para realizar a conexão com o banco de dados.
-
-    * acesse o link https://data.world/jcnok/financial-sample/workspace/file?filename=Financial+Sample.xlsx
-    * 
     
 
 ### Sua gerente deseja ver um relatório sobre seus últimos números de vendas. Ela solicitou um resumo executivo para responder as seguintes perguntas:
@@ -98,15 +92,15 @@ Aqui estão as colunas do conjunto de dados e suas respectivas descrições:
 
 ### Print do relatório de Sales(Vendas):
 
-![img](./img/sales_report.jpeg)
+![img](../img/sales_report.jpeg)
 
 ### Print do relatório de Profit(Lucro):
 
-![img](./img/profit_report.jpeg)
+![img](../img/profit_report.jpeg)
 
 ### Print do relatório de Discount(Descontos):
 
-![img](./img/discount_report.jpeg)
+![img](../img/discount_report.jpeg)
 
 ### Respostas das perguntas após a conclusão dos relatórios:
 
@@ -210,3 +204,31 @@ report
 
 ### Com relatório interativo podemos realizar as análises diretamente aqui pelo jupyter e ainda utilizá-lo em uma apresentação ou até mesmo como uma documentação. 
 
+# Passo 01:
+
+![passo1](../img/passo_01.png)
+
+# Passo 2:
+
+![passo2](../img/passo_02.png)
+
+# Passo3:
+
+![passo3](../img/passo_03.png)
+
+# Passo 4:
+
+![passo4](../img/passo_04.png)
+
+# Passo 5:
+
+![passo5](../img/passo_05.png)
+
+# Passo 6: 
+
+![passo6](../img/passo_06.png)
+
+
+```python
+
+```

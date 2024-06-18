@@ -1,6 +1,6 @@
 # Desafio:  Projeto de Integração de Dados com Power BI
 
-![img](./img/photo.jpg)
+![gif](./img/powerbi_project.gif)
 
 ## Visão Geral
 

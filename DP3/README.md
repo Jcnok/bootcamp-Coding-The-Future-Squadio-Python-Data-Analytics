@@ -1,6 +1,66 @@
-# Desafio: Criando Um Relatório Gerencial de Vendas com Power BI
+# Desafio:  Projeto de Integração de Dados com Power BI
 
-![img](../img/photo.jpg)
+![img](./img/photo.jpg)
+
+## Visão Geral
+
+Bem-vindo ao projeto de integração de dados com Power BI! Neste guia, você encontrará uma abordagem simplificada e eficiente para conectar e visualizar dados financeiros utilizando Power BI e a plataforma data.world. 
+
+A escolha por data.world se deu pela sua facilidade de uso e replicação, eliminando a necessidade de criar uma conta na Azure para acessar o banco de dados MySQL. Este projeto demonstrará como carregar dados, realizar consultas SQL e integrar com Power BI de maneira otimizada, visando uma melhor compreensão e praticidade.
+
+## Motivação
+
+A decisão de utilizar [data.world](https://data.world/) foi impulsionada pela necessidade de uma solução prática e acessível para a replicação do projeto, sem comprometer a qualidade e a funcionalidade. Além disso, data.world oferece uma excelente plataforma para realizar consultas SQL diretamente nos dados carregados, permitindo uma integração suave com Power BI.
+
+## Requisitos do Projeto
+
+1. **Conta no [data.world](https://data.world/)**: Para seguir este tutorial, você precisará criar uma conta gratuita no data.world.
+
+## Passo a Passo
+
+### 1. Carregando Dados do data.world
+
+1. Crie uma conta no [data.world](https://data.world/).
+2. Após criar a conta, acesse o link do [banco de dados](https://data.world/jcnok/financial-sample6-12-2024) confome a imagem:
+
+![passo2](./img/passo_02.png)
+4. Nomeie o dataset de forma adequada, por exemplo, "Amostra Financeira".
+
+### 2. Executando Consultas SQL no data.world
+
+1. Navegue até o  dataset e clique em "New Query".
+2. Utilize a interface SQL do data.world para escrever consultas. Por exemplo, para visualizar todas as entradas do arquivo:
+   ```sql
+   SELECT * FROM FinancialSample
+   ```
+3. Salve a consulta para utilizá-la posteriormente no Power BI.
+
+![passo3](./img/passo_03.png)
+
+![pass4](./img/passo_04.png)
+
+### 3. Integrando com Power BI
+
+1. Abra o Power BI Desktop.
+2. Na tela inicial, selecione "Obter Dados" e escolha a opção "data.world".
+![img](./img/passo_01.png)
+5. Carregue os dados no Power BI.
+![passo5](./img/passo_05.png)
+![passo6](./img/passo_06.png)
+### 4. Otimização e Visualização
+
+Para otimizar a integração e visualização dos dados:
+
+1. Ao invés de carregar todo o dataset, utilize consultas SQL para extrair apenas os atributos necessários.
+2. Realize merges de tabelas diretamente nas consultas SQL no data.world para reduzir o volume de dados carregados no Power BI.
+3. Utilize filtros e transformações no Power BI para criar visualizações significativas e interativas.
+
+## Conclusão
+
+Este projeto demonstra como é possível integrar e visualizar dados de maneira eficiente e prática utilizando Power BI e data.world. Ao optar por data.world, eliminamos a necessidade de configurar um banco de dados MySQL na Azure, simplificando o processo e facilitando a replicação.
+
+A integração SQL com Power BI não apenas otimiza o desempenho, mas também oferece uma flexibilidade incrível na manipulação de dados. Esperamos que este guia tenha fornecido um caminho claro e eficaz para alcançar resultados semelhantes em seus projetos.
+
 
 ## Documentação do Conjunto de Dados "financial sample.xlsx"
 
@@ -87,9 +147,6 @@ Aqui estão as colunas do conjunto de dados e suas respectivas descrições:
     * total custo dos produtos(cogs)
     
 
-### O relatório foi desenvolvido no powerbi desktop e depois publicado é possível visualizar-lo pelo link abaixo:
-[RELATÓRIO POWERBI](https://app.powerbi.com/view?r=eyJrIjoiODcyMzBmMGQtZGRiZi00ZDE3LTk4NjQtMWU2Njc0NzdlNGEwIiwidCI6Ijk4ZjkwMzVmLTZkOWMtNDBmMy1hNDI0LWI0NDY0M2NjMmYyZiJ9)_
-
 ### Print do relatório de Sales(Vendas):
 
 ![img](./img/sales_report.jpeg)
@@ -131,104 +188,3 @@ Aqui estão as colunas do conjunto de dados e suas respectivas descrições:
 ### Conclusão:
 
 **O relatório revela insights valiosos sobre o desempenho financeiro da empresa. Os Estados Unidos lideram as vendas, com destaque para dezembro de 2014 como o mês mais lucrativo. Além disso, o segmento "Government" e o produto "Paseo" mostram-se como líderes em lucratividade. Essas informações são cruciais para orientar as decisões estratégicas da empresa e identificar oportunidades de investimento. Acompanhar a sazonalidade e a relação entre vendas e descontos é essencial para um crescimento sustentável.**
-
-**No mundo da análise  e visualização de dados, o Power BI se destaca como uma ferramenta essencial para criar relatórios interativos e painéis envolventes. No entanto, o Jupyter Notebook também é amplamente utilizado por cientistas de dados e analistas para explorar e analisar dados.**  
-**Vamos explorar como utilizar o Power BI dentro do Jupyter Notebook**.
-
-**Passo 1: Instalação da Biblioteca**
-
-Antes de mergulhar de cabeça na integração, é necessário instalar a biblioteca Power BI para Python. Você pode fazer isso facilmente executando o seguinte comando no seu Jupyter Notebook:
-
-
-
-```python
-!pip install powerbiclient
-```
-
-**Passo 2: Carregando as Bibliotecas Necessárias**
-
-Depois de instalar a biblioteca Power BI, importe as bibliotecas necessárias no seu notebook:
-
-
-```python
-from powerbiclient import QuickVisualize, get_dataset_config, Report
-from powerbiclient.authentication import DeviceCodeLoginAuthentication
-```
-
-**Passo 3: Autenticação com a Conta do Power BI**
-
-Para interagir com o Power BI, você precisa autenticar sua conta. Utilizaremos a autenticação com código de dispositivo, o que torna o processo seguro e conveniente:
-
-
-```python
-device_auth = DeviceCodeLoginAuthentication()
-```
-
-    Performing device flow authentication. Please follow the instructions below.
-    To sign in, use a web browser to open the page https://microsoft.com/devicelogin and enter the code BK3UWVF8D to authenticate.
-    
-    Device flow authentication successfully completed.
-    You are now logged in .
-    
-    The result should be passed only to trusted code in your notebook.
-
-
-Siga as instruções para copiar o código gerado e cole-o após acessar o link fornecido. Isso autentica sua conta do Power BI.
-
-**Nesse exemplo irei carregar o relatório recém criado e publicado.**
-
-Para isso será necessário acessar o serviço do PowerBi Online já com o relatório devidamente publicado e copiar a ID do report e a ID do workspace onde salvou o report. Segue um exemplo abaixo:
-
-
-```python
-# report 
-group_id="24041EF3-E463-4027-A5E6-85DFF3296BF9" # vá no pbi online em configurações/portal de administração/workspaces/detalhes 
-report_id="c252dcb3-8f09-4285-9f09-096a6d814147" # abra o relatório clique em arquivo/inserir relatório/site ou portal/ copie o link e localize o reportID.
-report = Report(group_id=group_id, report_id=report_id, auth=device_auth)
-# Alterar a dimensão do report
-report.set_size(600, 900)
-```
-
-**Passo 4: Exibindo o Relatório**
-
-
-```python
-#Exibindo o relatório
-report
-
-```
-
-
-    Report(container_height=600.0, container_width=900.0)
-
-
-### Com relatório interativo podemos realizar as análises diretamente aqui pelo jupyter e ainda utilizá-lo em uma apresentação ou até mesmo como uma documentação. 
-
-# Passo 01:
-
-![passo1](./img/passo_01.png)
-
-# Passo 2:
-
-![passo2](./img/passo_02.png)
-
-# Passo3:
-
-![passo3](./img/passo_03.png)
-
-# Passo 4:
-
-![passo4](./img/passo_04.png)
-
-# Passo 5:
-
-![passo5](./img/passo_05.png)
-
-# Passo 6: 
-
-![passo6](./img/passo_06.png)
-
-
-```python
-
-```

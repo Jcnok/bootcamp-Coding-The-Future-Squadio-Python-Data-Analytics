@@ -1,8 +1,12 @@
 # Bootcamp Coding the Future Squadio - Python Data Analytics
 Repositório com todos os projetos e desafios!
 
-
-<img src="images\logo.webp" align='center' alt="drawing" width="250" heigth="250"/>
+<a href="https://www.dio.me/bootcamp/bootcamp-squadio">
+  <img src="images\logo.webp" align='center' alt="drawing" width="250" heigth="250"/>
+</a>
+<a href="https://www.dio.me/users/julio_okuda">
+  <img src="images\julio_okuda.png" align='center' alt="drawing" width="350" heigth="250"/>
+</a>
 
 ## Sobre
 
